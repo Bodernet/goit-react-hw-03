@@ -6,7 +6,7 @@ const ContactList = ({ contactsData, delContact }) => {
       <ul className={css.cardList}>
         {contactsData.map((contact) => (
           <li className={css.cardItem} key={contact.id}>
-            <Contact data={contact} delContact={delContact} />
+            <Contact {...contact} delContact={delContact} />
           </li>
         ))}
       </ul>

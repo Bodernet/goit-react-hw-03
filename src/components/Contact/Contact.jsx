@@ -2,7 +2,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import css from "./Contact.module.css";
 
-const Contact = ({ data: { id, name, number }, delContact }) => {
+const Contact = ({ id, number, name, delContact }) => {
   return (
     <div className={css.container}>
       <div className={css.contactNameNumber}>
